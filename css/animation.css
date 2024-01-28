@@ -5,6 +5,10 @@
     --slideImage1 : url('../art/bambini.webp');
     --slideImage2 : url('../art/simona_rassicurante.webp');
     --slideImage3 :url('../art/cavalli.webp');
+
+    --slideImage1ver : url('../art/bambini_vertical.webp');
+    --slideImage2ver : url('../art/cavallo_bianco.webp');
+    --slideImage3ver :url('../art/simona_mare.webp');
 }
 
 @-webkit-keyframes hero-slideshow {
@@ -107,60 +111,71 @@
 
 @media only screen and (max-width: 992px) {
     @-webkit-keyframes hero-slideshow {
+        0%{ background-size: 100%; }
         0%, 15% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
         18%, 48% {
-            background-image: var(--slideImage2)
+            background-image: var(--slideImage2ver)
         }
+        50%{ background-size: 120%; }
         51%, 82% {
-            background-image: var(--slideImage3)
+            background-image: var(--slideImage3ver)
         }
         85%, 100% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
+        100%{ background-size: 100%; }
     }
     @-moz-keyframes hero-slideshow {
+        0%{ -moz-background-size: 100%; background-size: 100%; }
         0%, 15% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
         18%, 48% {
-            background-image: var(--slideImage2)
+            background-image: var(--slideImage2ver)
         }
+        50%{ -moz-background-size: 120%; background-size: 120%; }
         51%, 82% {
-            background-image: var(--slideImage3)
+            background-image: var(--slideImage3ver)
         }
         85%, 100% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
+        100%{ -moz-background-size: 100%; background-size: 100%; }
     }
     @-o-keyframes hero-slideshow {
+        0%{ -o-background-size: 100%; background-size: 100%; }
         0%, 15% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
         18%, 48% {
-            background-image: var(--slideImage2)
+            background-image: var(--slideImage2ver)
         }
+        50%{ -o-background-size: 120%; background-size: 120%; }
         51%, 82% {
-            background-image: var(--slideImage3)
+            background-image: var(--slideImage3ver)
         }
         85%, 100% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
+        100%{ -o-background-size: 100%; background-size: 100%; }
     }
     @keyframes hero-slideshow {
+        0%{ -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; }
         0%, 15% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
         18%, 48% {
-            background-image: var(--slideImage2)
+            background-image: var(--slideImage2ver)
         }
+        50%{ -moz-background-size: 120%; -o-background-size: 120%; background-size: 120%; }
         51%, 82% {
-            background-image: var(--slideImage3)
+            background-image: var(--slideImage3ver)
         }
         85%, 100% {
-            background-image: var(--slideImage1)
+            background-image: var(--slideImage1ver)
         }
+        100%{ -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; }
     }
-    
 }
