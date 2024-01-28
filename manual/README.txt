@@ -1,0 +1,1 @@
+Open Roundazzle Manual(index.html) in your browser to view.
