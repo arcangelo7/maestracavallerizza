@@ -377,6 +377,7 @@ section.bg-primary-foot{
 
 .card-team{
     position: relative;
+    cursor: pointer;
     height: 400px;
     width: 80%;
     margin: auto;
@@ -388,6 +389,64 @@ section.bg-primary-foot{
             box-shadow: 0 11px 20px var(--shadowColor);
     overflow: hidden;
 }
+
+.card-team::after {
+    content: '\f10e'; /* Utilizza un codice di carattere per l'icona (freccia giù in questo esempio) */
+    font-family: 'bootstrap-icons'; /* Assicurati di avere Font Awesome o un'altra libreria di icone */
+    position: absolute;
+    bottom: .4em;
+    right: .4em;
+    font-size: 1.2em;
+    color: var(--textWhite);
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
+    display: none; /* Nascondi di default su desktop */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-team:hover::after,
+.card-team:focus::after {
+    display: none; /* Nasconde l'indicazione durante l'hover */
+}
+
+@media only screen and (max-width: 600px) {
+
+    .card-team::after {
+        display: block; /* Mostra su mobile */
+    }
+
+    .card-team.expanded::after {
+        display: none; /* Nasconde su mobile quando espansa */
+    }
+
+    .card-team.expanded .info {
+        /* Stili per mostrare l'intera descrizione quando la card è espansa */
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1; /* Assicurati che la descrizione sia completamente visibile */
+        max-height: 100%; /* Imposta un'altezza massima per mostrare tutto il contenuto */
+        overflow: visible; /* Assicurati che tutto il contenuto sia visibile */
+
+        max-height: 300px; /* Imposta un'altezza massima */
+        overflow-y: auto; /* Aggiunge una barra di scorrimento verticale se necessario */
+        padding: 10px; /* Aggiungi padding interno per leggibilità */
+        box-sizing: border-box; /* Assicura che il padding non aumenti la dimensione complessiva */
+    }
+
+    .card-team.expanded > img {
+        -webkit-transform: translateY(-25%) scale(1.05);
+        -moz-transform: translateY(-25%) scale(1.05);
+        -ms-transform: translateY(-25%) scale(1.05);
+        -o-transform: translateY(-25%) scale(1.05);
+        transform: translateY(-25%) scale(1.05); /* Opzionale: leggera zoom sull'immagine */
+    }
+}
+
+
 .card-team > img{
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
@@ -691,7 +750,8 @@ footer > .copy{
             box-sizing: border-box;
     padding: 15px;
     width: 100%;
-    background-color: var(--primaryBgBody);
+    border: 1px solid var(--primaryColor);
+    /* background-color: var(--primaryBgBody); */
 }
 .message-form > .row > input{
     width: -webkit-calc(50% - 20px);
@@ -700,7 +760,7 @@ footer > .copy{
 }
 .message-form textarea{
     width: 100%;
-    border: none;
+    /* border: none; */
     resize: vertical;
 }
 

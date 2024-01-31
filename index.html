@@ -130,7 +130,7 @@
             </p>
             <div class="row flex-just-center">
                 <div class="col-tri">
-                    <article class="card-team">
+                    <article class="card-team" onclick="expandDescriptionOrRedirect(this, 'about.html#simonaAnderlini')">
                         <img src="art/simona_radiosa.jpg" alt="">
                         <h3 class="title ff-damion">Simona Anderlini</h3>
                         <div class="info">
@@ -138,43 +138,24 @@
                             <p>
                                 Simona, con una vasta esperienza nell'insegnamento e nella formazione, è un pilastro fondamentale del nostro team. Laureata in Scienze della Formazione, vanta un'esperienza ventennale nel campo dell'equitazione, con specializzazioni in equiturismo, endurance e salto a ostacoli
                             </p>
+                            <a href="about.html#simonaAnderlini" class="btn-bg1 border-round mt-4">Scopri di più</a>
                         </div>
                     </article>
                 </div>
-                <!-- <div class="col-tri">
-                    <article class="card-team">
-                        <img src="art/arcangelo.jpg" alt="">
-                        <h3 class="title ff-damion">Arcangelo Massari</h3>
+                <div class="col-tri">
+                    <article class="card-team" onclick="expandDescriptionOrRedirect(this, 'about.html#annaMariaMegna')">
+                        <!-- Inserire un'immagine adeguata di Anna Maria Megna qui -->
+                        <img src="art/anna_maria_megna.jpg" alt="Anna Maria Megna">
+                        <h3 class="title ff-damion">Anna Maria Megna</h3>
                         <div class="info">
-                            <h3 class="ff-damion">Sviluppatore</h3>
+                            <h3 class="ff-damion">Trainer in Programmazione Neurolinguistica e Coach Esperto</h3>
                             <p>
-                                When I gaze upon the stars' gentle embrace, I glimpse a universe of 
-                                dreams slipping into space, but dreamers must awaken to a stark and empty place.
+                                Anna Maria Megna, socio fondatore di PNL Polis s.r.l e Trainer in Programmazione Neurolinguistica, combina oltre quindici anni di esperienza in Personal e Business Coaching con una profonda passione per i cavalli. Specializzata in leadership emotiva e comunicazione d'impresa, Anna Maria porta una ricca conoscenza nel nostro team, enfatizzando il potere trasformativo dell'interazione con i cavalli per lo sviluppo emotivo e comunicativo
                             </p>
-                            <p>
-                                Whispering in the language of forgotten dreams, I hear the echoes of 
-                                desires lost in silent streams.
-                            </p>
+                            <a href="about.html#annaMariaMegna" class="btn-bg1 border-round mt-4">Scopri di più</a>
                         </div>
                     </article>
-                </div> -->
-                <!-- <div class="col-tri">
-                    <article class="card-team">
-                        <img src="art/team.webp" alt="">
-                        <h3 class="title ff-damion">Johnny Doe</h3>
-                        <div class="info">
-                            <h3 class="ff-damion">Frontend Developer</h3>
-                            <p>
-                                When I gaze upon the stars' gentle embrace, I glimpse a universe of 
-                                dreams slipping into space, but dreamers must awaken to a stark and empty place.
-                            </p>
-                            <p>
-                                Whispering in the language of forgotten dreams, I hear the echoes of 
-                                desires lost in silent streams.
-                            </p>
-                        </div>
-                    </article>
-                </div> -->
+                </div>            
             </div>
             <br>
         </section>
@@ -413,5 +394,42 @@
     </footer>
     <!-- FOOTER END -->
 
+    <script>
+        function expandDescriptionOrRedirect(element, url) {
+            if (!element.classList.contains('expanded')) {
+                element.classList.add('expanded');
+            } else {
+                window.location.href = url; 
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var teamCards = document.querySelectorAll('.card-team');
+
+            teamCards.forEach(function(card) {
+                card.addEventListener('mouseenter', function() {
+                    if (window.innerWidth > 600) { // Solo su desktop
+                        this.classList.add('expanded');
+                    }
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    if (window.innerWidth > 600) { // Solo su desktop
+                        this.classList.remove('expanded');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(event) {
+                var isClickInsideCard = event.target.closest('.card-team');
+
+                if (!isClickInsideCard) {
+                    teamCards.forEach(function(card) {
+                        card.classList.remove('expanded');
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
