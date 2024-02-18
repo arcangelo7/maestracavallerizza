@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Johnny Alimoot C.">
+    <meta name="author" content="Arcangelo Massari">
     <!-- DESCRIPTION OF THE PAGE -->
-    <meta name="description" content="Free corporate web template by JACode - Johnny Alimoot C">
+    <meta name="description" content="Esplora i nostri corsi dedicati all'equitazione per famiglie, insegnanti e manager. Scopri come l'equitazione può rafforzare il legame, migliorare la comunicazione e la fiducia.">
     
     <!-- KEYWORDS OF THE PAGE TO HELP SEARCH ENGINE -->
-    <meta name="keywords" content="HTML, CSS, Blue, Rounded, Modern, Nice">
+    <meta name="keywords" content="corsi di equitazione, equitazione per famiglie, corsi di equitazione, sviluppo personale attraverso l'equitazione, equitazione educativa">
 
     <!-- OG IMAGE IS THE IMAGE SHOWN WHEN YOUR WEBSITE LINK IS SHARED ON SOCIAL MEDIA -->
-    <meta property="og:image" content="art/og-card.png">
-    <meta property="og:title" content="Roundazzle - Free corporate web template">
+    <meta property="og:image" content="art/simona_rassicurante.jpg">
+    <meta property="og:title" content="Maestra Cavallerizza">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- THE TITLE OF THE PAGE -->
-    <title>Roundazzle | Service</title>
+    <title>Maestra Cavallerizza | Corsi</title>
 
     <link rel="preload" href="icons/bootstrap-icons.css" as="style">
     <link rel="preload" href="css/fontstyle.css" as="style">
@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="art/favicon.png">
+    <link rel="icon" type="image/png" href="art/favicon.ico">
+
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <body>
     <!-- FADE OUT ANIMATION WHEN LOADED -->
@@ -37,16 +39,16 @@
     <main>
 
         <!-- SUB HERO BANNER START -->
-        <section class="sub-hero-banner" style="background-image: url('art/hero3.webp');">
+        <section class="sub-hero-banner" style="background-image: url('art/gruppo.webp');">
             <div class="hero-contained">
                 <div class="hero-title fc-white">
-                    <h1 class="ff-damion">Roundazzle | Our Services</h1>
+                    <h1 class="ff-damion">Maestra Cavallerizza | I Nostri Corsi</h1>
                     <a href="index.html" class="fc-white">
                         Home
                     </a>
                     <i class="bi bi-chevron-right"></i>
                     <a href="#" class="fc-white">
-                        Service
+                        Corsi
                     </a>
                 </div>
             </div>
@@ -71,17 +73,15 @@
         <nav>
             <div class="contained">
                 <a href="index.html" class="logo fc-primary ff-damion row flex-alig-center">
-                    <span class="fs-h2">Roundazzle</span>
+                    <span class="fs-h2">Maestra Cavallerizza</span>
                 </a>
                 <input type="checkbox" name="tablet-mobile-menu" class="tab-mob-menu" aria-label="tablet and mobile menu">
                 <div class="navigation-container">
                     <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="service.html">Service</a>
-                    <a href="industries.html">Industries</a>
+                    <a href="about.html">Istruttori</a>
+                    <a href="service.html">Corsi</a>
                     <a href="blog/blog.html">Blog</a>
-                    <a href="career/career.html">Career</a>
-                    <a href="contact.html" class="btn-bg1 border-round">Contact Us</a>
+                    <a href="contact.html" class="btn-bg1 border-round">Contattaci</a>
                 </div>
             </div>
         </nav>
@@ -92,85 +92,64 @@
 
         <!-- SERVICES START -->
         <section class="contained">
-            <h2 class="section-title ff-damion">Service</h2>
+            <h2 class="section-title ff-damion">I Nostri Corsi</h2>
             <div class="col-wide mlmr-a ta-center">
                 <span class="fc-primary fs-h2">
-                    Experience top notch, high quality, over the top, range of services.
+                    Corsi Specializzati in Equitazione
                 </span>
                 <p>
-                    We are now in space, our service is so high, and top we've reached the ever expanding universe.
-                    Here's our range of exceptional services, designed to meet your needs with both quality 
-                    and affordability in mind. Don't hesitate to experience the difference today. Go ahead, 
-                    listen to this placeholder text.
+                    La nostra offerta include corsi personalizzati per ogni fascia d'età e necessità, promuovendo lo sviluppo personale e professionale attraverso l'equitazione
                 </p>
             </div>
 
             <div class="row">
                 <div class="col-wide">
-
-                    <!-- INDIVIDUAL SERVICES FEATURE START -->
-                    <img src="art/hero1.webp" class="img-unheight" alt="" id="service-dev">
-                    <span class="fs-h3 mt-25">Development</span>
+                    <!-- Corso per Genitori -->
+                    <img src="art/corsi-famiglie.webp" class="img-unheight" alt="Corso per Genitori" id="corsiGenitori">
+                    <span class="fs-h3 mt-25">Corsi per Genitori</span>
                     <p>
-                        Some random placeholder text to enhance the appearance of the content. This text serves as 
-                        an explanation for the service description, akin to 'Lorem Ipsum dolor.' It's used to make 
-                        the content more visually appealing. Did I mention that I am a placeholder text?
-                    </p>
+                        Progettati per rafforzare il legame tra genitori e figli, questi corsi offrono l'opportunità di condividere un'esperienza unica, imparando a comunicare e a collaborare attraverso l'equitazione
+                    </p>                  
+                    <stripe-buy-button
+                        buy-button-id="buy_btn_1OlAJcJG4YgOPCSYNUpCHMpT"
+                        publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT"
+                    >
+                    </stripe-buy-button>                    
+                    <!-- Corso per Bambini -->
+                    <img src="art/bambini.webp" class="img-unheight mt-50" alt="Corso per Bambini" id="corsiBambini">
+                    <span class="fs-h3 mt-25">Corsi per Bambini</span>
                     <p>
-                        The repetition of the same placeholder text can be less visually appealing to readers. 
-                        Most individuals tend to focus on the first and last few words of a text. Therefore, it's 
-                        beneficial to use a varied placeholder text to maintain reader engagement, but who's gonna read
-                        placeholder anyways.
+                        Attraverso il gioco e l'apprendimento pratico, i bambini sviluppano abilità motorie, fiducia in sé stessi e rispetto per gli animali, in un ambiente sicuro e stimolante.
                     </p>
-                    <!-- INDIVIDUAL SERVICES FEATURE END -->
-
-                    <!-- INDIVIDUAL SERVICES FEATURE START -->
-                    <img src="art/hero2.webp" class="img-unheight mt-50" alt="" id="service-data">
-                    <span class="fs-h3 mt-25">Data Analysis</span>
+                    <stripe-buy-button
+                        buy-button-id="buy_btn_1OlAJcJG4YgOPCSYNUpCHMpT"
+                        publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT"
+                    >
+                    </stripe-buy-button>                    
+                    <!-- Corso per Insegnanti e Manager -->
+                    <img src="art/corso-manager.webp" class="img-unheight mt-50" alt="Corso per Insegnanti e Manager" id="corsiManager">
+                    <span class="fs-h3 mt-25">Corsi per Insegnanti e Manager</span>
                     <p>
-                        Some random placeholder text to enhance the appearance of the content. This text serves as 
-                        an explanation for the service description, akin to 'Lorem Ipsum dolor.' It's used to make 
-                        the content more visually appealing. Did I mention that I am a placeholder text?
+                        Questi corsi sono focalizzati sullo sviluppo di competenze di leadership, gestione del team e comunicazione efficace, sfruttando i principi dell'equitazione per trasferire queste abilità nel contesto professionale.
                     </p>
-                    <p>
-                        The repetition of the same placeholder text can be less visually appealing to readers. 
-                        Most individuals tend to focus on the first and last few words of a text. Therefore, it's 
-                        beneficial to use a varied placeholder text to maintain reader engagement, but who's gonna read
-                        placeholder anyways.
-                    </p>
-                    <!-- INDIVIDUAL SERVICES FEATURE END -->
-
-                    <!-- INDIVIDUAL SERVICES FEATURE START -->
-                    <img src="art/hero3.webp" class="img-unheight mt-50" alt="" id="service-design">
-                    <span class="fs-h3 mt-25">Design</span>
-                    <p>
-                        Some random placeholder text to enhance the appearance of the content. This text serves as 
-                        an explanation for the service description, akin to 'Lorem Ipsum dolor.' It's used to make 
-                        the content more visually appealing. Did I mention that I am a placeholder text?
-                    </p>
-                    <p>
-                        The repetition of the same placeholder text can be less visually appealing to readers. 
-                        Most individuals tend to focus on the first and last few words of a text. Therefore, it's 
-                        beneficial to use a varied placeholder text to maintain reader engagement, but who's gonna read
-                        placeholder anyways.
-                    </p>
-                    <!-- INDIVIDUAL SERVICES FEATURE END -->
-
+                    <stripe-buy-button
+                        buy-button-id="buy_btn_1OlAJcJG4YgOPCSYNUpCHMpT"
+                        publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT"
+                    >
+                    </stripe-buy-button>                    
                 </div>
 
                 <!-- SERVICES SIDE BAR SHORTCUT LINKS START -->
                 <div class="col-slim order-tab-1">
                     <div class="card-side card-side-navigation">
-                        <h3 class="no-margin ff-damion">Services</h3>
+                        <h3 class="no-margin ff-damion">Corsi</h3>
                         <hr>
-                        <a href="#service-dev">Development</a>
-                        <a href="#service-data">Data Analysis</a>
-                        <a href="#service-design">Design</a>
-                        <a href="#no-sauce-available">Outsaucing</a>
+                        <a href="#corsiGenitori">Corsi per Genitori</a>
+                        <a href="#corsiBambini">Corsi per Bambini</a>
+                        <a href="#corsiManager">Corsi per Insegnanti e Manager</a>
                     </div>
                 </div>
                 <!-- SERVICES SIDE BAR SHORTCUT LINKS END -->
-
             </div>
         </section>
         <!-- SERVICES END -->
@@ -182,50 +161,42 @@
 
             <!-- FOOTER WEBSITE MOTO START -->
             <div class="col-quad">
-                <h3 class="ff-damion">Roundazzle</h3>
+                <h3 class="ff-damion">Maestra Cavallerizza</h3>
                 <p>
-                    Our mission is your vision and your mission is to tell
-                    us your vision, so that what you envision will become our mission.
+                    Unisciti a noi per scoprire come l'interazione con i cavalli può arricchire e rafforzare il legame familiare. Vivete insieme un'esperienza di crescita, apprendimento e divertimento
                 </p>
-                <p>
-                    We are a placeholder text and yes we are aware of that. We have generated self awareness ever since
-                    the beginning of time and space.
-                </p>
-            </div>
+                </div>
             <!-- FOOTER WEBSITE MOTO END -->
 
             <!-- FOOTER QUICK CONTACT START -->
             <div class="col-quad">
-                <h3 class="ff-damion">Get in touch</h3>
-                <a href="#" class="display-block fc-white icon-link mt-10 mb-10">
+                <h3 class="ff-damion">Contattaci</h3>
+                <a href="mailto:simo@maestracavallerizza.it" class="display-block fc-white icon-link mt-10 mb-10" target="_blank">
                     <i class="bi bi-envelope-fill"></i>
-                    nonexistentadd@gmail.com
+                    simo@maestracavallerizza.it
                 </a>
-                <a href="#" class="display-block fc-white icon-link mt-10 mb-10">
+                <!-- <a href="#" class="display-block fc-white icon-link mt-10 mb-10">
                     <i class="bi bi-telephone-fill"></i>
                     +639123456789
-                </a>
-                <a href="#" class="display-block fc-white icon-link mt-10 mb-10">
+                </a> -->
+                <a href="https://www.google.com/maps/place/Via+Fornace,+3,+40037+Sasso+Marconi+BO/@44.3968042,11.2864527,17z/data=!3m1!4b1!4m6!3m5!1s0x132ad450e3b4d96b:0x676555325fc669c8!8m2!3d44.3968042!4d11.2890276!16s%2Fg%2F11fsrdxbnb?hl=it&entry=ttu" class="display-block fc-white icon-link mt-10 mb-10" target="_blank">
                     <i class="bi bi-geo-alt-fill"></i>
-                    20th street, Dreamland
+                    Circolo ippico Valganzole Via Fornace, 3, Sasso Marconi (BO)
                 </a>
-                <a href="#" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
+                <a href="https://www.facebook.com/maestracavallerizza.it/" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook" target="_blank">
                     <i class="bi bi-facebook"></i>
                 </a>
-                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on instagram">
+                <a href="https://www.instagram.com/maestracavallerizza/" class="display-inblock fc-white icon-link" aria-label="Follow on instagram" target="_blank">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on twitter">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <a href="#" class="display-inblock fc-white icon-link" aria-label="Follow on youtube">
+                <a href="https://youtube.com/@simonaanderlini9828" class="display-inblock fc-white icon-link" aria-label="Follow on youtube" target="_blank">
                     <i class="bi bi-youtube"></i>
                 </a>
             </div>
             <!-- FOOTER QUICK CONTACT END -->
             
             <!-- FOOTER SCHEDULE START -->
-            <div class="col-quad">
+            <!-- <div class="col-quad">
                 <h3 class="ff-damion">Opening hours</h3>
                 <p class="mt-10 mb-10 fw-bold">
                     Monday - Friday:
@@ -239,11 +210,11 @@
                     Sunday:
                     <span class="fw-normal display-block">10:00 - 10:01</span>
                 </p>
-            </div>
+            </div> -->
             <!-- FOOTER SCHEDULE END -->
             
             <!-- FOOTER USEFUL LINKS START -->
-            <div class="col-quad">
+            <!-- <div class="col-quad">
                 <h3 class="ff-damion">Useful Links</h3>
                 <a href="index.html" class="display-block fc-white mt-5 mb-5">
                     <i class="bi bi-chevron-compact-right"></i>
@@ -273,15 +244,14 @@
                     <i class="bi bi-chevron-compact-right"></i>
                     Contact
                 </a>
-            </div>
+            </div> -->
             <!-- FOOTER USEFUL LINKS END -->
-
+            
         </div>
         <div class="copy ta-center fc-white">
-            <small>&copy; Your site - Copyright 2023</small>
+            <small>&copy; Maestra Cavallerizza - Copyright 2023</small>
         </div>
     </footer>
-    <!-- FOOTER END -->
     
 </body>
 </html>
