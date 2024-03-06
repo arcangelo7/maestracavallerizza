@@ -1,0 +1,74 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 6 March 2023 17:35
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.2.1
+WORDPRESS:	6.1.1
+PHP INFO:	7.3.33 | SAPI: fpm-fcgi
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (1024M default) 
+MEMORY STACK: 2MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:25 | filtered:0 | create:25
+FILTERED: []
+SQL CREATED: 20230306_maestracavallerizza_3cbc2faaaf5e12d72310_20230306173513_database.sql
+SQL FILE SIZE: 931.74KB (954103)
+SQL FILE TIME: 2023-03-06 17:35:34
+SQL RUNTIME: 0.20 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  /web/htdocs/www.maestracavallerizza.it/home
+ARCHIVE FILE: 20230306_maestracavallerizza_3cbc2faaaf5e12d72310_20230306173513_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	174.02MB
+STATS:	Dirs 1,609 | Files 8,999
+SQL ADDED: 20230306_maestracavallerizza_3cbc2faaaf5e12d72310_20230306173513_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 10608
+    [filename] => /web/htdocs/www.maestracavallerizza.it/home/wp-content/backups-dup-lite/tmp/20230306_maestracavallerizza_3cbc2faaaf5e12d72310_20230306173513_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 10607
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 75.14MB
+ARCHIVE RUNTIME: 36.43 sec.
+MEMORY STACK: 2MB
+building installer
+TEST DI COERENZA DELL'ARCHIVIO: SUPERATO
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 931.74KB
+INSTALLER FILE: 73.36KB
+ARCHIVE FILE: 77.07MB 
+CONTEGGIO FILE/DIRECTORY PREVISTO: 10,608
+CONTEGGIO FILE/DIRECTORY EFFETTIVO: 10,607
+Test d consistenza dell'archivio: Superato
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 40.74 sec.
+PEAK PHP MEMORY USED: 4MB
+DONE PROCESSING => 20230306_maestracavallerizza 6 March 2023 17:36
+

@@ -1,0 +1,49 @@
+.frm_section{margin:auto;width:70%}.frm_seccol{width:70%}.frm_col{width:100%!important}.frm_main{width:100%}.contact_map{width:47%;float:left}.contact_map iframe{width:100%;min-height:400px;border:0}.frm_main p{font-size:15px;text-align:center;line-height:normal}.frm_start{margin-top:1em;width:99%}.frm_start form{margin:0;padding:0}.frm_start form input[type=text],.frm_start form textarea{width:99%;outline:0;font-size:17px;padding:10px 0 10px 10px;margin-bottom:1em;-webkit-appearance:none}.frm_start form textarea{resize:none;min-height:12em}.frm_button input[type=submit],[type=reset]{border:0;outline:0;padding:7px 17px;font-size:16px;font-weight:600;-webkit-appearance:none;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;margin-bottom:10px}.frm_button input[type=submit]:hover,[type=reset]:hover{transition:.5s all;-webkit-transition:.5s all;-moz-transition:.5s all;-ms-transition:.5s all;-o-transition:.5s all}.frm_button{margin:1.5em 0 2em;text-align:center}.frm_start form select{width:100%;outline:0;font-size:16px;padding:10px 5px;margin-bottom:1em}.frm_start form select option:first-child{display:none}.rd_button{padding:10px 0 10px 10px;font-size:17px;font-weight:600;margin-bottom:1em}.rd_button span{display:block}.rd_button label{display:inline-block;font-weight:400;margin:5px 0}.rd_button input[type=checkbox],.rd_button input[type=radio]{line-height:normal;margin:0 5px}@media (max-width:1024px){.frm_start form input[type=text]{font-size:14px;padding:8px 10px}}@media (max-width:768px){.rd_button label{}}@media (max-width:640px){.frm_start form input[type=text]{font-size:14px;padding:7px 10px;margin-bottom:10px}.rd_button label{width:100%}}@media (max-width:480px){.frm_section{width:96%}.frm_main p{margin:0}.frm_start form input[type=text]{font-size:14px;padding:7px 10px;margin-bottom:10px}.frm_button input[type=submit],[type=reset]{padding:6px 20px;font-size:14px}.frm_button{margin-top:1em;text-align:center}.rd_button label{width:100%}}@media (max-width:320px){.frm_start{padding:0;margin-top:1em}.rd_button label{width:100%}}
+.frm_start {margin: 0em auto; width:80%; padding: 30px 35px 25px 35px;}
+.frm_main p{color:#000; font-size:20px; font-weight:normal;letter-spacing: 2px;} 
+.frm_start form input[type="text"]{color: #000000; border-top: solid 1px transparent; border-right: solid 1px transparent; border-left: solid 1px transparent; border-bottom: solid 1px #000; background-color: #fff;}
+.frm_start form select {color: #000000; border-top: solid 1px transparent; border-right: solid 1px transparent; border-left: solid 1px transparent; border-bottom: solid 1px transparent; background-color: #fff;}
+.frm_start form textarea {color: #000000; border-top: solid 1px transparent; border-right: solid 1px transparent; border-left: solid 1px transparent; border-bottom: solid 1px transparent; min-height: 7em; background-color: #fff;font-size: 20px;}
+.frm_button input[type="submit"], [type="reset"] {color: #fff; background: #a7a5a2; width: 44%; padding: 16px; border-radius:0; display: inline-block; font-size: 22px; font-weight:normal; font-weight:600; margin-right: 2%;font-family: 'Crimson Text', serif, sans-serif, tahoma, verdana, arial;}
+.frm_button input.active {background: #a7a5a2;}
+.frm_button input[type="submit"]:hover , [type="reset"]:hover{background: #000; color:#fff;}
+.rd_button span {color: #6a6a6a; font-weight:normal; font-size: 20px; margin-bottom: 5px;}
+.rd_button label {color: #6a6a6a; font-weight:normal; font-size:16px;}
+.frm_start form input[type="text"], .frm_start form select {font-size: 18px; margin-bottom: 30px; padding: 10px 0 5px 10px;}
+.frm_start form select option {color:#333}
+.frm_button input.submit_success{background: #f26c4f;color:#fff;}
+.hm_inner h3 {text-align:center;font-family: 'Cinzel', sans-serif, tahoma, verdana, arial;font-size: 30px;letter-spacing: 3px;color: #f26c4f;}
+.frm_section {width: 80%;font-family: 'Crimson Text', serif, sans-serif, tahoma, verdana, arial;}
+
+@media(max-width:1024px){
+	.hm_inner h3 {font-size: 27px;}
+	.frm_main p {font-size: 18px;}
+	}
+
+@media(max-width:768px){
+	.frm_start {width: 90%;}
+	.frm_start {padding: 40px 20px 25px 20px;}
+	.frm_main p {font-size: 17px;}
+	.frm_button input[type="submit"], [type="reset"] {font-size: 18px;}
+	.hm_inner h3 {font-size: 24px;}
+	}
+	
+@media(max-width:640px){
+	.frm_start form input[type="text"], .frm_start form select {font-size: 17px;}
+	.frm_start form textarea {font-size: 17px;}
+	.rd_button span {font-size: 17px;}
+	.rd_button label {font-size: 16px;}
+	.frm_main p {font-size: 16px;}
+	.hm_inner h3 {font-size: 21px;}
+	}	
+	
+@media(max-width:480px){	
+	.frm_start {width: 100%;}
+	.frm_start form input[type="text"], .frm_start form select {font-size: 16px;}
+	.frm_start form textarea {font-size: 16px;}
+	.rd_button span {font-size: 16px;}
+	.rd_button label {font-size: 15px;}
+	.frm_section {width: 95%;}
+	.frm_main p {font-size: 15px;}
+	.hm_inner h3 {font-size: 18px;}
+	}		
