@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="art/favicon.ico">
 
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>  
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXE4E602EL"></script>
@@ -83,7 +83,7 @@
                 <div class="navigation-container">
                     <a href="index.html">Home</a>
                     <a href="about.html">Istruttori</a>
-                    <!-- <a href="service.html">Corsi</a> -->
+                    <a href="service.html">Corsi</a>
                     <a href="blog/blog.html">Blog</a>
                     <a href="contact.html" class="btn-bg1 border-round">Contattaci</a>
                 </div>
@@ -193,54 +193,31 @@
         </section>
         <!-- TEAM SECTION END -->
 
-        <!-- PREVIEW SERVICE SECTION START -->
-        <!-- <section class="bg-primary-foot ta-center">
-            <h2 class="section-title ff-damion">I Nostri Percorsi: Crescita, Connessione, Trasformazione</h2>
-            <div class="contained">
-                <div class="row flex-just-center">
-                    <div class="col-tri">
-                        <h3 class="mt-10 ff-damion">Corsi per Genitori</h3>
-                            <p>
-                                Un programma dedicato ai genitori per esplorare il mondo dell'equitazione insieme ai loro figli, rafforzando il legame e imparando nuove competenze di comunicazione e fiducia reciproca.
-                            </p>
-                            <p class="price">Prezzo: €100</p>
-                            <stripe-buy-button
-                            buy-button-id="buy_btn_1OlAJcJG4YgOPCSYNUpCHMpT"
-                            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT"
-                            >
-                            </stripe-buy-button>
-                    </div>
-                    <div class="col-tri">
-                        <h3 class="mt-10 ff-damion">Corsi per Bambini</h3>
-                        <p>
-                            Corsi divertenti e interattivi pensati per i più piccoli, dove possono imparare a cavalcare e a interagire con i cavalli in modo sicuro e rispettoso, promuovendo la crescita personale.
-                        </p>
-                        <p class="price">Prezzo: €80</p>
-                        <stripe-buy-button
-                        buy-button-id="buy_btn_1OlAJcJG4YgOPCSYNUpCHMpT"
-                        publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT"
-                        >
-                        </stripe-buy-button>
-                    </div>
-                    <div class="col-tri">
-                    <h3 class="mt-10 ff-damion">Corsi per Insegnanti e Manager</h3>
-                        <p>
-                            Workshop e seminari dedicati a insegnanti e manager per sviluppare leadership, gestione del team e comunicazione efficace attraverso le attività di equitazione.
-                        </p>
-                        <p class="price">Prezzo: €150</p>
-                        <stripe-buy-button
-                        buy-button-id="buy_btn_1OlAJcJG4YgOPCSYNUpCHMpT"
-                        publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT"
-                        >
-                        </stripe-buy-button>
-                    </div>
-                </div>
+    <!-- PREVIEW SERVICE SECTION START -->
+    <section class="bg-primary-foot ta-center">
+        <h2 class="section-title ff-damion">Il Nostro Percorso: Crescita, Connessione, Trasformazione</h2>
+        <div class="contained">
+            <div class="col-wide mlmr-a">
+                <h3 class="mt-10 ff-damion">Cavalcando Emozioni: Un Viaggio Familiare</h3>
+                <p>
+                    Un viaggio unico pensato per genitori e figli, volto a esplorare il mondo dell'equitazione da terra. Il nostro corso mira a rafforzare i legami familiari attraverso la comunicazione non verbale e la fiducia reciproca, imparando a interagire con i cavalli in modo rispettoso e empatico.
+                </p>
+                <p>
+                    Attraverso <strong>quattro incontri domenicali</strong>, offriamo un'esperienza trasformativa che combina il divertimento dell'apprendimento con un profondo percorso di autoconoscenza e crescita personale. 
+                </p>
+                <p>
+                    Il nostro corso è guidato da <strong>Simona Anderlini</strong>, un'insegnante di equitazione con oltre 40 anni di esperienza, dedicata a promuovere un rapporto armonioso tra cavalli e cavalieri.
+                </p>
             </div>
-            <a href="service.html" class="btn-bg2 border-round mt-25">
-                Vedi i nostri corsi
-            </a>                                    
-        </section> -->
-        <!-- PREVIEW SERVICE SECTION END -->
+        </div>
+        <stripe-pricing-table pricing-table-id="prctbl_1Ouyt4JG4YgOPCSYzPw82MHl"
+            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
+        </stripe-pricing-table>
+        <a href="service.html" class="btn-bg2 border-round mt-25">
+            Scopri di più
+        </a>                                    
+    </section>
+    <!-- PREVIEW SERVICE SECTION END -->
 
         <!-- UISP AFFILIATION SECTION START -->
         <section class="bg-primary-light ta-center">
