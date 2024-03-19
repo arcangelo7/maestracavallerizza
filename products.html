@@ -10,6 +10,7 @@
     <meta property="og:title" content="Collezione ARMONITECH">
     <meta name="twitter:card" content="summary_large_image">
     <title>ARMONITECH Collezione | Maestra Cavallerizza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="icons/bootstrap-icons.css">
     <link rel="stylesheet" href="css/fontstyle.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -18,6 +19,7 @@
     <link rel="icon" type="image/png" href="art/favicon.ico">
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
     <span class="fade"></span>
@@ -60,20 +62,45 @@
             </div>
             <div class="row">
                 <!-- T-shirt ARMONITECH -->
-                <div class="col-wide">
-                    <img src="art/prodotti/maglietta_4.webp" class="img-unheight" alt="T-shirt ARMONITECH" id="armonitechTshirt">
+                <div class="col-wide mlmr-a ta-center">
+                    <div id="carouselTShirts" class="carousel slide" data-bs-ride="carousel"  data-bs-interval="5000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselTShirts" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselTShirts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselTShirts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="art/prodotti/maglietta_cavallo_squared.webp" class="d-block w-100" alt="T-shirt ARMONITECH 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="art/prodotti/maglietta_grande_squared.webp" class="d-block w-100" alt="T-shirt ARMONITECH 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="art/prodotti/maglietta_dettaglio_taschino_squared.webp" class="d-block w-100" alt="T-shirt ARMONITECH 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTShirts" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTShirts" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>                    
                     <span class="fs-h3 mt-25">T-shirt ARMONITECH</span>
                     <p>Con taschino brevettato per il cellulare. Disponibile in taglie per adulti e bambini</p>
                     <p><strong>Adulto (S, M, L): 60€</strong><br><strong>Bambino (S, M, L): 45€</strong></p>
                     <p>La taglia viene scelta in fase di acquisto</p>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col">
                             <stripe-buy-button
                             buy-button-id="buy_btn_1OvkOeJG4YgOPCSYvnxNA3yn"
                             publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
                             </stripe-buy-button>                
                         </div>
-                        <div class="col-6">
+                        <div class="col">
                             <stripe-buy-button
                             buy-button-id="buy_btn_1OvkQQJG4YgOPCSYzNTihAR4"
                             publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
@@ -82,7 +109,7 @@
                     </div>
                             
                     <!-- Sottosella ARMONITECH -->
-                    <img src="art/prodotti/sottosella.webp" class="img-unheight mt-50" alt="Sottosella ARMONITECH" id="armonitechSottosella">
+                    <!-- <img src="art/prodotti/sottosella.webp" class="img-unheight mt-50" alt="Sottosella ARMONITECH" id="armonitechSottosella">
                     <span class="fs-h3 mt-25">Sottosella ARMONITECH</span>
                     <p>Design unico per comfort e stile. Taglia unica</p>
                     <p><strong>Prezzo: 80€</strong></p>
@@ -90,7 +117,7 @@
                         buy-button-id="buy_btn_1OvkLhJG4YgOPCSY6JHeLZgH"
                         publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT"
                     >
-                    </stripe-buy-button>             
+                    </stripe-buy-button>              -->
 
                     <!-- Cappellino MAESTRACAVALLERIZZA -->
                     <!-- <img src="PLACEHOLDER_FOR_CAP_IMAGE" class="img-unheight mt-50" alt="Cappellino MaestraCavallerizza" id="mcCappellino">
@@ -100,15 +127,14 @@
                     <!-- Placeholder for Stripe Buy Button -->
                     <!-- <div>Link acquisto Cappellino</div> -->
                 </div>
-                <div class="col-slim order-tab-1">
+                <!-- <div class="col-slim order-tab-1">
                     <div class="card-side card-side-navigation">
                         <h3 class="no-margin ff-damion">Prodotti</h3>
                         <hr>
                         <a href="#armonitechTshirt">T-shirt ARMONITECH</a>
                         <a href="#armonitechSottosella">Sottosella ARMONITECH</a>
-                        <!-- <a href="#mcCappellino">Cappellino MaestraCavallerizza</a> -->
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
