@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="art/favicon.ico">
 
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXE4E602EL"></script>
@@ -123,10 +123,28 @@
         
                 <img src="art/corsi-famiglie.webp" class="img-unheight" alt="Corso per Genitori" id="corsiGenitori">    
             </div>
-        
-            <stripe-pricing-table pricing-table-id="prctbl_1Ouyt4JG4YgOPCSYzPw82MHl"
-                publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
-            </stripe-pricing-table>
+            <div class="col-wide mlmr-a ta-center">
+                <div class="row">
+                    <div class="col-tri">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1OuydkJG4YgOPCSYY0qwLDL6"
+                            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
+                        </stripe-buy-button>   
+                    </div>
+                    <div class="col-tri">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1P02yrJG4YgOPCSY2SJYV0wL"
+                            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
+                        </stripe-buy-button>                    
+                    </div>
+                    <div class="col-tri">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1P0311JG4YgOPCSY74OM84yb"
+                            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
+                        </stripe-buy-button>                    
+                    </div>
+                </div>             
+            </div>
         </section>
         <!-- SERVICES END -->
 
@@ -163,18 +181,19 @@
         <!-- INFORMAZIONI UTILI END -->
 
         <!-- UISP AFFILIATION SECTION START -->
-        <section class="contained ta-center">    
+        <section class="contained ta-center"> 
             <h2 class="section-title ff-damion">Affiliazione UISP</h2>
-            <p>
-                La nostra associazione è orgogliosamente affiliata all'<strong>Unione Italiana Sport Per tutti (UISP)</strong>, garantendo così che ogni esperienza offerta rispetti gli standard più elevati di qualità e sicurezza nel mondo dell'equitazione. Per partecipare ai nostri corsi, il tesseramento UISP è obbligatorio
-            </p>
-            <div class="uisp-logo-container ta-center">
-                <img src="art/Logo_UISP.webp" alt="Logo UISP" style="max-width: 10em;">
+            <div class="info-sections col-wide mlmr-a">
+                <p>
+                    La nostra associazione è orgogliosamente affiliata all'<strong>Unione Italiana Sport Per tutti (UISP)</strong>, garantendo così che ogni esperienza offerta rispetti gli standard più elevati di qualità e sicurezza nel mondo dell'equitazione. Per partecipare ai nostri corsi, il tesseramento UISP è obbligatorio
+                </p>
+                <div class="uisp-logo-container ta-center">
+                    <img src="art/Logo_UISP.webp" alt="Logo UISP" style="max-width: 10em;">
+                </div>
+                <p>
+                    Tuttavia, abbiamo semplificato il processo per voi: <strong>il costo della tessera UISP è incluso nel prezzo del corso selezionato</strong> e ci occuperemo noi di raccogliere i dati necessari per il tesseramento, assicurandovi una partecipazione serena e priva di preoccupazioni burocratiche
+                </p>    
             </div>
-            <p>
-                Tuttavia, abbiamo semplificato il processo per voi: <strong>il costo della tessera UISP è incluso nel prezzo del corso selezionato</strong> e ci occuperemo noi di raccogliere i dati necessari per il tesseramento, assicurandovi una partecipazione serena e priva di preoccupazioni burocratiche
-            </p>
-            <a href="#" class="btn-bg1 border-round mt-25">Tesseramento UISP</a>
         </section>
         <!-- UISP AFFILIATION SECTION END -->
     </main>

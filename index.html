@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="art/favicon.ico">
 
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXE4E602EL"></script>
@@ -195,28 +195,58 @@
         <!-- TEAM SECTION END -->
 
         <!-- PREVIEW SERVICE SECTION START -->
-        <section class="bg-primary-foot ta-center">
+        <section class="bg-primary-foot">
             <h2 class="section-title ff-damion">Il Nostro Percorso</h2>
             <div class="contained">
                 <div class="col-wide mlmr-a">
                     <h3 class="mt-10 ff-damion">Cavalcando Emozioni: Un Viaggio Familiare</h3>
                     <p>
-                        Un viaggio unico pensato per genitori e figli, volto a esplorare il mondo dell'equitazione da terra. Il nostro corso mira a rafforzare i legami familiari attraverso la comunicazione non verbale e la fiducia reciproca, imparando a interagire con i cavalli in modo rispettoso e empatico.
+                        Partecipa a "<strong>Cavalcando Emozioni</strong>", un'avventura trasformativa pensata per rafforzare il legame tra genitori e figli attraverso l'interazione con i cavalli <strong>da terra</strong>. Questo percorso è incentrato sulla crescita personale e il miglioramento delle relazioni familiari, promuovendo una comunicazione profonda ed empatica
                     </p>
+                    <h3 class="mt-10 ff-damion">Perché Partecipare?</h3>
+                    <ul>
+                        <li>Introspezione e Divertimento: Riflessione su divertimento e comunicazione attraverso attività che stimolano l'introspezione e il dialogo</li>
+                        <li>Interazione Genitori-Cavalli: Sviluppa empatia e fiducia reciproca imparando a comunicare con i cavalli, guidato da esperti</li>
+                        <li>Coinvolgimento dei Bambini: I bambini arricchiscono l'esperienza, aggiungendo una dimensione di apprendimento e condivisione</li>
+                        <li>Crescita Personale e Familiare: Strumenti pratici per arricchire le tue relazioni quotidiane</li>
+                    </ul>
+                    <h3 class="mt-10 ff-damion">Dettagli del Corso:</h3>
                     <p>
-                        Attraverso <strong>quattro incontri domenicali</strong>, offriamo un'esperienza trasformativa che combina il divertimento dell'apprendimento con un profondo percorso di autoconoscenza e crescita personale. 
-                    </p>
-                    <p>
-                        Il nostro corso è guidato da <strong>Simona Anderlini</strong>, un'insegnante di equitazione con oltre 40 anni di esperienza, dedicata a promuovere un rapporto armonioso tra cavalli e cavalieri.
+                        <strong>Quando:</strong> Quattro incontri domenicali, dalle 15 alle 17. Le date verranno stabilite in base alle tue disponibilità<br>
+                        <strong>Come:</strong> Un focus sull'interazione con il cavallo da terra, per migliorare il legame familiare attraverso l'empatia e la comunicazione non verbale<br>
+                        <strong>Dove:</strong> Presso uno dei nostri maneggi partner, il <a href="#maneggi" class="fc-white icon-link service-link">Circolo Ippico Valganzole, Sasso Marconi (BO)</a> o il <a href="#maneggi" class="fc-white icon-link service-link">Circolo Ippico Don Chisciotte, Bologna</a><br>
+                        <strong>Chi:</strong> Guidato da <a href="about.html#simonaAnderlini" class="fc-white icon-link service-link">Simona Anderlini</a>, istruttrice con oltre 40 anni di esperienza, che combina passione e conoscenza per offrire un approccio all'equitazione centrato sull'empatia e sulla sicurezza
                     </p>
                 </div>
-            </div>
-            <stripe-pricing-table pricing-table-id="prctbl_1Ouyt4JG4YgOPCSYzPw82MHl"
-                publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
-            </stripe-pricing-table>
-            <a href="service.html" class="btn-bg2 border-round mt-25">
-                Scopri di più
-            </a>                                    
+                <div class="row ta-center">
+                    <div class="col-wide mlmr-a">
+                        <a href="service.html" class="btn-bg2 border-round mt-25">
+                            Scopri di più
+                        </a>                                                    
+                    </div>
+                </div>
+                <div class="row ta-center mt-50">
+                    <div class="col-tri">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1OuydkJG4YgOPCSYY0qwLDL6"
+                            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
+                        </stripe-buy-button>   
+                    </div>
+                    <div class="col-tri">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1P02yrJG4YgOPCSY2SJYV0wL"
+                            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
+                        </stripe-buy-button>                    
+                    </div>
+                    <div class="col-tri">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1P0311JG4YgOPCSY74OM84yb"
+                            publishable-key="pk_live_51OlA4gJG4YgOPCSYpMxhyr9E3LTZzrWYST6uFxuwCqTHWXFQtsqn0SwuFVqbdkuRn4JK7bpmuGIzYNre7pW5ac7Z004XdLBYCT">
+                        </stripe-buy-button>                    
+                    </div>
+                </div>     
+            </div>          
+          </stripe-buy-button>
         </section>
         <!-- PREVIEW SERVICE SECTION END -->
 
@@ -277,7 +307,7 @@
         </section> -->
         <!-- SUBSCRIBE TO NEWS LETTERS ENS -->
 
-        <section class="bg-primary-foot ta-center">
+        <section class="bg-primary-foot ta-center" id="contatti">
             <h2 class="section-title ff-damion">Contatti</h2>
             <p class="col-wide mlmr-a">
                 Siamo qui per guidarti in un'esperienza unica che rafforzerà il legame con i tuoi cari e promuoverà la tua crescita personale. Contattaci per scoprire di più sui nostri corsi e su come possiamo aiutarti a iniziare questo viaggio trasformativo
@@ -288,14 +318,14 @@
         </section>
 
         <!-- NEW SECTION: MANEGGI PARTNER START -->
-        <section class="contained">
+        <section class="contained" id="maneggi">
             <h2 class="section-title ff-damion">I Nostri Maneggi Partner</h2>
             <p class="col-wide ta-center mlmr-a">
                 Grazie alla nostra rete di maneggi partner, offriamo corsi in diverse località. Scopri il maneggio più vicino a te
             </p>
             <div class="row flex-just-center">
                 <div class="col-tri">
-                    <article class="card-blog">
+                    <article class="card-blog" id="valganzole">
                         <img src="art/valganzole.webp" alt="Circolo Ippico Valganzole">
                         <div class="info">
                             <h3>Circolo Ippico Valganzole</h3>
@@ -305,7 +335,7 @@
                     </article>
                 </div>
                 <div class="col-tri">
-                    <article class="card-blog">
+                    <article class="card-blog" id="donChisciotte">
                         <img src="art/don_chisciotte.webp" alt="Circolo Ippico Don Chisciotte">
                         <div class="info">
                             <h3>Circolo Ippico Don Chisciotte</h3>
